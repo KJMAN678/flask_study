@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+
+{% extends "layout.html" %}
+
+{% block title %}
+Index
+{% endblock %}
+
+{% block headline %}
+{{title}}
+{% endblock%}
+
+{% block content %}
+<p>{{ message }}</p>
+<form method="post" action="/hello/">
+  <input type="text" name="send"
+    value="{{ send }}">
+  <input type="submit">
+</form>
+{% endblock %}
+
+{% block footer %}
+copyright 2022 KOJI SHIMIZU
+{% endblock %}

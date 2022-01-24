@@ -1,0 +1,21 @@
+table th {/*table内のthに対して*/
+  padding: 10px;/*上下左右10pxずつ*/
+}
+
+table td {/*table内のtdに対して*/
+  padding: 3px 10px;/*上下3pxで左右10px*/
+}
+
+table {
+  color: black;/*テーブルの文字色をskyblueに*/
+  width:300px;/*幅を300pxに*/
+  text-align: center;/*文字を中央ぞろえに*/
+  background: #eee;/*背景色の変更*/
+  border: solid 1px white;/*線の色と太さを変更*/
+  border-collapse: collapse;/*線を一重線に*/
+}
+table tr:nth-child(odd) td {/*奇数列のみの処理*/
+	background: #fff;
+  border: solid 1px white;
+  border-collapse: collapse;
+}
